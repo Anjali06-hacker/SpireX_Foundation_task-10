@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Makes the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
+    <title>Country Information App</title>
+    <!-- Connecting CSS file -->
+    <link rel="stylesheet" href="task-10.css">
+</head>
+<body>
+    <!-- Main application container -->
+    <main class="country-container">
+        <!-- Main heading -->
+        <h1>Country Information App</h1>
+        <!-- Short description -->
+        <p class="description">
+            Search for a country to view its information
+        </p>
+        <!-- Search section -->
+        <div class="search-section">
+            <!-- Country search input -->
+            <input
+                type="text"
+                id="countryInput"
+                placeholder="Enter country name"
+            >
+            <!-- Search button -->
+            <button id="searchButton">
+                Search
+            </button>
+        </div>
+        <!-- Error/status message -->
+        <p id="statusMessage" class="status-message"></p>
+        <!--Country information will be displayed
+            inside this section by JavaScript.        -->
+        <section id="countryCard" class="country-card">
+            <!-- Country flag -->
+            <img
+                id="countryFlag"
+                src=""
+                alt="Country Flag"
+            >
+            <!-- Country name -->
+            <h2 id="countryName">
+                Search for a country
+            </h2>
+            <!-- Country details -->
+            <div class="country-details">
+                <p>
+                    <strong>Capital:</strong>
+                    <span id="capital">-</span>
+                </p>
+                <p>
+                    <strong>Population:</strong>
+                    <span id="population">-</span>
+                </p>
+                <p>
+                    <strong>Region:</strong>
+                    <span id="region">-</span>
+                </p>
+                <p>
+                    <strong>Currency:</strong>
+                    <span id="currency">-</span>
+                </p>
+                <p>
+                    <strong>Language:</strong>
+                    <span id="language">-</span>
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Connecting JavaScript file -->
+    <script src="task-10.js"></script>
+</body>
+</html>

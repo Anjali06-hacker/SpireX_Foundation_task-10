@@ -1,0 +1,133 @@
+/*  Remove default margin and padding
+    from all elements.  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  Main webpage styling  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/*  Main application card  */
+.country-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+/*  Main heading  */
+h1 {
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+/*  Description  */
+.description {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+/*  Search section  */
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+/*  Search input  */
+#countryInput {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+/*  Input focus effect  */
+#countryInput:focus {
+    border-color: #2563eb;
+}
+/*  Search button  */
+#searchButton {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*  Search button hover effect  */
+#searchButton:hover {
+    background-color: #1d4ed8;
+}
+/*  Status/error message  */
+.status-message {
+    min-height: 20px;
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+/*  Country information card  */
+.country-card {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+/*  Country flag  */
+#countryFlag {
+    width: 180px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+}
+/*  Country name  */
+#countryName {
+    color: #0f172a;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+/*  Country details container  */
+.country-details {
+    text-align: left;
+}
+/*  Individual country information  */
+.country-details p {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #334155;
+}
+/*  Responsive design for smaller screens  */
+@media (max-width: 600px) {
+    .country-container {
+        padding: 25px;
+    }
+    .search-section {
+        flex-direction: column;
+    }
+    #searchButton {
+        width: 100%;
+    }
+    #countryFlag {
+        width: 150px;
+        height: 95px;
+    }
+    #countryName {
+        font-size: 24px;
+    }
+}
